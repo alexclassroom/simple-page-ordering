@@ -124,7 +124,7 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 				wp_die( esc_html__( 'You are not allowed to edit this item.', 'simple-page-ordering' ) );
 			}
 
-			list( 'top_level_pages' => $top_level_pages, 'children_pages' => $children_pages ) = self::get_walked_pages();
+			list( 'top_level_pages' => $top_level_pages, 'children_pages' => $children_pages ) = self::get_walked_pages( $post->post_type );
 
 			// Get the relevant siblings.
 			if ( 0 === $post->post_parent ) {
@@ -195,9 +195,9 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 		 *    @type WP_Post[] $children_pages  Children pages.
 		 * }
 		 */
-		public static function get_walked_pages() {
+		public static function get_walked_pages( $post_type = 'page' ) {
 			global $wpdb;
-			$pages = get_pages( array( 'sort_column' => 'menu_order title' ) );
+			$pages = get_pages( array( 'sort_column' => 'menu_order title', 'post_type' => $post_type ) );
 
 			$top_level_pages = array();
 			$children_pages  = array();
@@ -393,7 +393,7 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 				return $actions;
 			}
 
-			list( 'top_level_pages' => $top_level_pages, 'children_pages' => $children_pages ) = self::get_walked_pages();
+			list( 'top_level_pages' => $top_level_pages, 'children_pages' => $children_pages ) = self::get_walked_pages( $post->post_type );
 
 			$edit_link                   = get_edit_post_link( $post->ID, 'raw' );
 			$move_under_grandparent_link = add_query_arg(
