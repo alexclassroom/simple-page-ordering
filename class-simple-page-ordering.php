@@ -197,7 +197,12 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 		 */
 		public static function get_walked_pages( $post_type = 'page' ) {
 			global $wpdb;
-			$pages = get_pages( array( 'sort_column' => 'menu_order title', 'post_type' => $post_type ) );
+			$pages = get_pages(
+				array(
+					'sort_column' => 'menu_order title',
+					'post_type'   => $post_type,
+				)
+			);
 
 			$top_level_pages = array();
 			$children_pages  = array();
