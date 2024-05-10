@@ -190,6 +190,8 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 		/**
 		 * Walk the pages and return top level and children pages.
 		 *
+		 * @param string $post_type Post type to walk.
+		 *
 		 * @return array {
 		 *    @type WP_Post[] $top_level_pages Top level pages.
 		 *    @type WP_Post[] $children_pages  Children pages.
