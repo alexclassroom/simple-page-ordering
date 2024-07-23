@@ -435,14 +435,10 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 
 			// Get the relevant siblings.
 			if ( 0 === $post->post_parent ) {
-                $siblings = $top_level_pages;
-            } else {
-                if (isset($children_pages[$post->post_parent])) {
-                    $siblings = $children_pages[$post->post_parent];
-                } else {
-                    $siblings = [];
-                }
-            }
+				$siblings = $top_level_pages;
+			} else {
+				$siblings = $children_pages[ $post->post_parent ] ?? [];
+			}
 
 			// Assume no sibling.
 			$sibling = 0;
