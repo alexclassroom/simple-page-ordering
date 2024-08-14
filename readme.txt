@@ -1,7 +1,7 @@
 === Simple Page Ordering ===
 Contributors:      10up, jakemgold, welcher, helen, thinkoomph, jeffpaul
 Donate link:       http://10up.com/plugins/simple-page-ordering-wordpress/
-Tags:              order, re-order, ordering, page, menu_order
+Tags:              order, re-order, ordering, page, menu order
 Tested up to:      6.6
 Stable tag:        2.7.1
 License:           GPLv2 or later
