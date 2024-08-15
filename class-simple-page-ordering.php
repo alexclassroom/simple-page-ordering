@@ -437,7 +437,7 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 			if ( 0 === $post->post_parent ) {
 				$siblings = $top_level_pages;
 			} else {
-				$siblings = $children_pages[ $post->post_parent ];
+				$siblings = $children_pages[ $post->post_parent ] ?? [];
 			}
 
 			// Assume no sibling.
