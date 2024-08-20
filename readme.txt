@@ -114,8 +114,6 @@ Yes. The plugin registers the REST endpoint `simple-page-ordering/v1/page_orderi
 * **Fixed:** Issue where an `Undefined array key` error occurs when a post parent ID does not exist in the `$children_pages` array (props [@xDehy](https://github.com/xDehy), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#219](https://github.com/10up/simple-page-ordering/pull/219)).
 * **Security:** Bump `express` from 4.18.2 to 4.19.2, `follow-redirects` from 1.15.5 to 1.15.6, `postcss` from 7.0.39 to 8.4.33, `10up-toolkit` from 5.2.3 to 6.1.0 and `webpack-dev-middleware` from 5.3.3 to 5.3.4 (props [@dependabot](https://github.com/apps/dependabot), [@faisal-alvi](https://github.com/faisal-alvi) via [#208](https://github.com/10up/simple-page-ordering/pull/208)).
 * **Security:** Bump `braces` from 3.0.2 to 3.0.3 and `ws` from 7.5.9 to 7.5.10 (props [@dependabot](https://github.com/apps/dependabot), [@iamdharmesh](https://github.com/iamdharmesh) via [#214](https://github.com/10up/simple-page-ordering/pull/214)).
-* **Developer:** Update the `importFile` step to be `importWxr` in our `blueprint.json` config (props [@ernilambar](https://github.com/ernilambar), [@dkotter](https://github.com/dkotter) via [#210](https://github.com/10up/simple-page-ordering/pull/210)).
-* **Developer:** Update repo badges, add WordPress Playground badge (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#221](https://github.com/10up/simple-page-ordering/pull/221)).
 
 = 2.7.1 - 2024-06-03 =
 * **Added:** The missing Text Domain (props [@alexclassroom](https://github.com/alexclassroom), [@dkotter](https://github.com/dkotter) via [#199](https://github.com/10up/simple-page-ordering/pull/199)).
