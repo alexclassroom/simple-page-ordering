@@ -7,17 +7,17 @@ Stable tag:        2.7.2
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-Order your pages and other custom post types that support "page-attributes" with simple drag and drop right from the standard page list.
+Order your pages and other custom post types that support "page-attributes" with drag and drop right from the standard page list.
 
 == Description ==
 
-Order your pages, hierarchical custom post types, or custom post types with "page-attributes" with simple drag and drop right from the built in page list.
+Order your pages, hierarchical custom post types, or custom post types with "page-attributes" with drag and drop right from the built in page list.
 
-Simply drag and drop the page into the desired position. It's that simple. No new admin menus pages, no clunky, bolted on user interfaces. Just drag and drop on the page or post-type screen.
+Drag and drop the page into the desired position. No new admin menus pages, no clunky, bolted on user interfaces. Drag and drop on the page or post-type screen.
 
 The plug-in is "capabilities aware" - only users with the ability to edit others' pages (editors and administrators) will be able to reorder content.
 
-Integrated help is included: just click the "help" tab at the top right of the screen.
+Integrated help is included: click the "help" tab at the top right of the screen.
 
 Please note that the plug-in is not compatible with Internet Explorer 7 and earlier, due to limitations within those browsers.
 
